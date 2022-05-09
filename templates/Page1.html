@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <title>{% block title %}{% endblock %}</title>
+{% extends "layout.html" %}
+
+{% block title %}Page 1: Name{% endblock %}
+
+{% block content %}
+  <h1>Page 1: What is your name?</h1>
+
+ <form action={{ url_for("renderPage2") }} method="POST">
+  First name:<br>
+  <input type="text" name="firstName">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastName">
+  <input type="submit" value="Submit">
+ </form>
 
 
-  </head>
-  <body>
-
-
-  {% block content %}{% endblock %}
-
-  </body>
-</html>
+{% endblock %}
