@@ -19,7 +19,7 @@ def renderMain():
 
 @app.route('/startOver')
 def startOver():
-    session.clear() 
+    session.clear()
     return redirect(url_for('renderMain')) # url_for('renderMain') could be replaced with '/'
 
 @app.route('/P1')
