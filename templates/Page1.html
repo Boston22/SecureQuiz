@@ -3,92 +3,98 @@
 {% block title %}Page 1: Name{% endblock %}
 
 {% block content %}
+
   <h1>Page 1: What parts of the bike do you know?</h1>
+  <label for="burger-toggle" class="burger-menu">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</label>
 
  <form action={{ url_for("renderPage2") }} method="POST">
   <br>
-  <p><strong><ins>Parts that make the bike move:</ins></strong></p><br>
-  Cassette:    <input type="text" placeholder="insert place on bike here" name="cassette"><br><br>
-  Chain rings:    <input type="text" placeholder="insert place on bike here" name="chainRings"><br><br>
-  Chain:    <input type="text" placeholder="insert place on bike here" name="chain"><br><br>
-  Rear shifter:    <input type="text" placeholder="insert place on bike here" name="rearShifter"><br><br>
-  Front shifter:    <input type="text" placeholder="insert place on bike here" name="frontShifter"><br><br>
-  Pedals:    <input type="text" placeholder="insert place on bike here" name="pedals"><br><br>
-  Crank arms:    <input type="text" placeholder="insert place on bike here" name="crankArms"><br><br>
-  Crankset:    <input type="text" placeholder="insert place on bike here" name="crankset"><br><br>
+  <pre><p><strong><ins>Parts that make the bike move:</ins></strong></p><br>
+  Cassette:    <input type="text" placeholder="insert place on bike " name="cassette"><br><br>
+  Chain rings:    <input type="text" placeholder="insert place on bike " name="chainRings"><br><br>
+  Chain:    <input type="text" placeholder="insert place on bike " name="chain"><br><br>
+  Rear shifter:    <input type="text" placeholder="insert side of handlebar " name="rearShifter"><br><br>
+  Front shifter:    <input type="text" placeholder="insert side of handlebar " name="frontShifter"><br><br>
+  Pedals:    <input type="text" placeholder="insert place on bike " name="pedals"><br><br>
+  Crank arms:    <input type="text" placeholder="insert place on bike " name="crankArms"><br><br>
+  Crankset:    <input type="text" placeholder="insert place on bike " name="crankset"><br><br>
   <br></br>
   <p><strong><ins>Parts of a wheel:</ins></strong></p><br>
-  Rim:    <input type="text" placeholder="insert where on wheel here" name="rim"><br><br> <!-- rim -->
-  Spokes:    <input type="text" placeholder="insert where on wheel here" name="spokes"><br><br> <!-- spokes -->
-  Spoke nipples:    <input type="text" placeholder="insert where on wheel here" name="spokeNipples"><br><br> <!-- spoke nipples -->
-  Rim:    <input type="text" placeholder="insert where on wheel here" name="hub"><br><br> <!-- hub -->
-  Rim:    <input type="text" placeholder="insert where on wheel here" name="tube"><br><br> <!-- tube -->
-  Rim:    <input type="text" placeholder="insert where on wheel here" name="tire"><br><br> <!-- tire -->
-  Rim:    <input type="text" placeholder="insert where on wheel here" name="valveSystem"><br><br> <!-- valve system -->
+  Rim:    <input type="text" placeholder="insert where on wheel " name="rim"><br><br>
+  Spokes:    <input type="text" placeholder="insert where on wheel " name="spokes"><br><br>
+  Spoke nipples:    <input type="text" placeholder="insert where on wheel " name="spokeNipples"><br><br>
+  Hub:    <input type="text" placeholder="insert where on wheel " name="hub"><br><br>
+  Tube:    <input type="text" placeholder="insert where on wheel " name="tube"><br><br>
+  Tire:    <input type="text" placeholder="insert where on wheel " name="tire"><br><br>
+  Rim:    <input type="text" placeholder="insert where on wheel " name="valveSystem"><br><br>
   <br>
   <p><strong><ins>Type of tires:</ins></strong></p><br>
-  Rim:    <input type="text" placeholder="insert kind here" name="tubed"><br><br> <!-- tubed -->
-  Rim:    <input type="text" placeholder="insert kind here" name="tubeless"><br><br> <!-- tubeless -->
+  Rim:    <input type="text" placeholder="insert kind " name="tubed"><br><br>
+  Rim:    <input type="text" placeholder="insert kind " name="tubeless"><br><br>
   <br>
   <p><strong><ins>Types of valve systems:</ins></strong></p><br>
-  Rim:    <input type="text" placeholder="insert kind here" name="shrader"><br><br> <!-- shrader -->
-  Rim:    <input type="text" placeholder="insert kind here" name="presta"><br><br> <!-- presta -->
+  Rim:    <input type="text" placeholder="insert kind " name="shrader"><br><br>
+  Rim:    <input type="text" placeholder="insert kind " name="presta"><br><br>
   <br>
   <p><strong><ins>Sizes of tires (not including e-bike tires):</ins></strong></p><br>
-  Size:    <input type="text" placeholder="insert size as _in here" name="20">inch<br><br> <!-- 20 -->
-  Size:    <input type="text" placeholder="insert size as _in here" name="24">inch<br><br> <!-- 24 -->
-  Size:    <input type="text" placeholder="insert size as _in here" name="26">inch<br><br> <!-- 26 -->
-  Size:    <input type="text" placeholder="insert size as _in here" name="27">inch<br><br> <!-- 27 -->
-  Size:    <input type="text" placeholder="insert size as _in here" name="27.5">inch<br><br> <!-- 27.5 -->
-  Size:    <input type="text" placeholder="insert size as _in here" name="29">inch<br><br> <!-- 29 -->
+  Size:    <input type="text" placeholder="insert size as _in " name="20">inch<br><br>
+  Size:    <input type="text" placeholder="insert size as _in " name="24">inch<br><br>
+  Size:    <input type="text" placeholder="insert size as _in " name="26">inch<br><br>
+  Size:    <input type="text" placeholder="insert size as _in " name="27">inch<br><br>
+  Size:    <input type="text" placeholder="insert size as _in " name="27.5">inch<br><br>
+  Size:    <input type="text" placeholder="insert size as _in " name="29">inch<br><br>
   <br>
   <p><strong><ins>Kinds of bikes:</ins></strong></p><br>
-  Full suspension:    <input type="text" placeholder="insert kind here" name="fullSuspension"><br><br> <!-- full suspension -->
-  Front suspention:    <input type="text" placeholder="insert kind here" name="frontSuspention"><br><br> <!-- front suspention -->
+  Full suspension:    <input type="text" placeholder="insert kind " name="fullSuspension"><br><br>
+  Front suspention:    <input type="text" placeholder="insert kind " name="frontSuspention"><br><br>
   <br>
-  <p><strong><ins>Chain sizes:</ins></strong></p><br>
-  <input type="text" placeholder="insert size as _in here" name="5"><br><br> <!-- 5 -->
-  <input type="text" placeholder="insert size as _in here" name="6"><br><br> <!-- 6 -->
-  <input type="text" placeholder="insert size as _in here" name="7"><br><br> <!-- 7 -->
-  <input type="text" placeholder="insert size as _in here" name="8"><br><br> <!-- 8 -->
-  <input type="text" placeholder="insert size as _in here" name="9"><br><br> <!-- 9 -->
-  <input type="text" placeholder="insert size as _in here" name="10"><br><br> <!-- 10 -->
-  <input type="text" placeholder="insert size as _in here" name="11"><br><br> <!-- 11 -->
-  <input type="text" placeholder="insert size as _in here" name="12"><br><br> <!-- 12 -->
-  <input type="text" placeholder="insert size as _in here" name="13"><br><br> <!-- 13 -->
+  <p><strong><ins>Chain sizes:</ins></strong></p><br> (start at smallest and end largest)
+  Start:    <input type="text" placeholder="insert size as _in " name="c5"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c6"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c7"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c8"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c9"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c10"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c11"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c12"><br><br>
+  <input type="text" placeholder="insert size as _in " name="c13"><br><br>
   <br>
   <p><strong><ins>Parts of frame:</ins></strong></p><br>
-  bottom tub:    <input type="text" placeholder="insert where on wheel here" name="bottomTub"><br><br> <!-- bottom tub/down tube -->
-  Top tube/upper tube:    <input type="text" placeholder="insert where on wheel here" name="topTube"><br><br> <!-- top tube/upper tube -->
-  Seat tube:    <input type="text" placeholder="insert where on wheel here" name="seatTube"><br><br> <!-- seat tube -->
-  Seat post:    <input type="text" placeholder="insert where on wheel here" name="seatPost"><br><br> <!-- seat post -->
-  Stem:    <input type="text" placeholder="insert where on wheel here" name="stem"><br><br> <!-- stem -->
-  Head tube:    <input type="text" placeholder="insert where on wheel here" name="headTube"><br><br> <!-- head tube -->
-  Front dropout:    <input type="text" placeholder="insert where on wheel here" name="frontDropout"><br><br> <!-- front dropout -->
-  Fork legs/fork blade:    <input type="text" placeholder="insert where on wheel here" name="forkLegs"><br><br> <!-- fork legs/blade -->
-  Seat stays:    <input type="text" placeholder="insert where on wheel here" name="seatStays"><br><br> <!-- seat stays -->
-  Headset:    <input type="text" placeholder="insert where on wheel here" name="headset"><br><br> <!-- headset -->
-  Housing stop:    <input type="text" placeholder="insert where on wheel here" name="housingStop"><br><br> <!-- housing stop -->
-  Rear dropout:    <input type="text" placeholder="insert where on wheel here" name="rearDropout"><br><br> <!-- rear dropout -->
-  Fork crown:    <input type="text" placeholder="insert where on wheel here" name="forkCrown"><br><br> <!-- fork crown -->
-  Adjusting barrel:    <input type="text" placeholder="insert where on wheel here" name="adjustingBarrel"><br><br> <!-- adjusting barrel -->
-  Front brakes:    <input type="text" placeholder="insert where on wheel here" name="frontBrakes"><br><br>
-  Rear brakes:    <input type="text" placeholder="insert where on wheel here" name="rearBrakes"><br><br>
+  bottom tub:    <input type="text" placeholder="insert where on wheel " name="bottomTub"><br><br>
+  Top tube/upper tube:    <input type="text" placeholder="insert where on wheel " name="topTube"><br><br>
+  Seat tube:    <input type="text" placeholder="insert where on wheel " name="seatTube"><br><br>
+  Seat post:    <input type="text" placeholder="insert where on wheel " name="seatPost"><br><br>
+  Stem:    <input type="text" placeholder="insert where on wheel " name="stem"><br><br>
+  Head tube:    <input type="text" placeholder="insert where on wheel " name="headTube"><br><br>
+  Front dropout:    <input type="text" placeholder="insert where on wheel " name="frontDropout"><br><br>
+  Fork legs/fork blade:    <input type="text" placeholder="insert where on wheel " name="forkLegs"><br><br>
+  Seat stays:    <input type="text" placeholder="insert where on wheel " name="seatStays"><br><br>
+  Headset:    <input type="text" placeholder="insert where on wheel " name="headset"><br><br>
+  Housing stop:    <input type="text" placeholder="insert where on wheel " name="housingStop"><br><br>
+  Rear dropout:    <input type="text" placeholder="insert where on wheel " name="rearDropout"><br><br>
+  Fork crown:    <input type="text" placeholder="insert where on wheel " name="forkCrown"><br><br>
+  Adjusting barrel:    <input type="text" placeholder="insert where on wheel " name="adjustingBarrel"><br><br>
+  Front brakes:    <input type="text" placeholder="insert which side of handle bars" name="frontBrakes"><br><br>
+  Rear brakes:    <input type="text" placeholder="insert which side of handle bars" name="rearBrakes"><br><br>
   <br>
   <p><strong><ins>Types of brakes:</ins></strong></p><br>
-  Rim:    <input type="text" placeholder="insert type here" name="insert type here"><br><br> <!-- u brakes -->
-  Rim:    <input type="text" placeholder="insert type here" name="insert type here"><br><br> <!-- rim brakes -->
-  Rim:    <input type="text" placeholder="insert type here" name="insert type here"><br><br> <!-- disc brakes -->
+  U brakes:    <input type="text" placeholder="insert type " name="uBrakes"><br><br>
+  Rim brakes:    <input type="text" placeholder="insert type " name="rimBrakes"><br><br>
+  Disc brakes:    <input type="text" placeholder="insert type " name="discBrakes"><br><br>
   <br>
   <p><strong><ins>Parts of Disc Brakes:</ins></strong></p><br>
-  Rotor:    <input type="text" placeholder="insert part name here" name="insert part name here"><br><br> <!-- rotor -->
-  Brake pads:    <input type="text" placeholder="insert part name here" name="insert part name here"><br><br> <!-- brakes pads -->
+  Rotor:    <input type="text" placeholder="insert what it is connected to" name="rotor"><br><br>
+  Brake pads:    <input type="text" placeholder="insert what it is connected to" name="brakesPads"><br><br>
   <br>
   <p><strong><ins>Types of disc brakes:</ins></strong></p><br>
-  Rim:    <input type="text" placeholder="insert type here" name="insert type here"><br><br> <!-- hydrolic disc brakes -->
-  Rim:    <input type="text" placeholder="insert type here" name="insert type here"><br><br> <!-- mechanical disc brake -->
+  Type of disc brake:    <input type="text" placeholder="insert type " name="hydrolicDisc"> disc brake<br><br>
+  Type of disc brake:    <input type="text" placeholder="insert type " name="mechanicalDisc"> disc brake<br><br>
   <br>
-
+</pre>
   <input type="submit" value="Submit">
  </form>
 

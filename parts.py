@@ -24,11 +24,19 @@ def startOver():
 
 @app.route('/P1')
 def renderPage1():
-  return render_template('Page1.html')
+    return render_template('Page1.html')
 
-@app.route('/P2')
+@app.route('/P2', methods=["POST"])
 def renderPage2():
-  return render_template('Page2.html')
+    session["cassette"]=request.form["cassette"]
+    session["chainRings"]=request.form["chainRings"]
+    session["chain"]=request.form["chain"]
+    session["rearShifter"]=request.form["rearShifter"]
+    session["frontShifter"]=request.form["frontShifter"]
+    session["pedals"]=request.form["pedals"]
+    session["crankArms"]=request.form["crankArms"]
+    session["crankset"]=request.form["crankset"]
+    return render_template('Page2.html')
 
 @app.route('/Q')
 def renderQuestions():
