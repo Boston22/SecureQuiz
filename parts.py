@@ -46,6 +46,10 @@ def renderQuestions():
 def renderTesting():
   return render_template('Test.html')
 
+@app.route('/Answer')
+def renderAnswers():
+    return render_template('Answers.html')
+
 
 
 
