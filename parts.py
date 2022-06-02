@@ -323,25 +323,25 @@ def renderAnswers():
     else:
         incorrect=incorrect+Markup("41. Rear brakes "+ "<br><b>your answer:</b> "+session["rearBrakes"]+"<br> <b>correct answer:</b>"+" brakes for front wheel<br><br>")
 
-    if session["uBrakes"]=="":
+    if session["uBrakes"]=="an older style of brakes that is a lot harder to fix":
         total=total+1
     else:
-        incorrect=incorrect+Markup("42. U-brakes "+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+" <br><br>")
+        incorrect=incorrect+Markup("42. U-brakes "+ "<br><b>your answer:</b> "+session["uBrakes"]+"<br> <b>correct answer:</b>"+" an older style of brakes that is a lot harder to fix<br><br>")
 
-    if session["rimBrakes"]=="":
+    if session["rimBrakes"]=="has two brake pads that go on opposite sides of the rims of the wheels":
         total=total+1
     else:
-        incorrect=incorrect+Markup("43. "+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+" <br><br>")
+        incorrect=incorrect+Markup("43. "+ "<br><b>your answer:</b> "+session["rimBrakes"]+"<br> <b>correct answer:</b>"+" has two brake pads that go on opposite sides of the rims of the wheels<br><br>")
 
-    if session["discBrakes"]=="":
+    if session["discBrakes"]=="brakes that have a rotor attatched to the hub of a bike":
         total=total+1
     else:
-        incorrect=incorrect+Markup("44. Disc brakes "+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+" <br><br>")
+        incorrect=incorrect+Markup("44. Disc brakes "+ "<br><b>your answer:</b> "+session["discBrakes"]+"<br> <b>correct answer:</b>"+" brakes that have a rotor attatched to the hub of a bike<br><br>")
 
-    if session["shrader"]=="":
+    if session["shrader"]=="the thicker and usually shorter valve system with usually just a plastic cap on it":
         total=total+1
     else:
-        incorrect=incorrect+Markup("45. shrader "+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+" <br><br>")
+        incorrect=incorrect+Markup("45. shrader "+ "<br><b>your answer:</b> "+session["shrader"]+"<br> <b>correct answer:</b>"+" the thicker and usually shorter valve system with usually just a plastic cap on it<br><br>")
 
     if session["presta"]=="the skinny and long valve system with a piece on end that can be loosened by twisting":
         total=total+1
@@ -353,7 +353,7 @@ def renderAnswers():
     else:
         incorrect=incorrect+Markup(+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+"  metal disc affixed to each wheel hub that runs in between the brake pads in the brake calipers on the bike frame<br><br>")
 
-    if "break" in session["tire"] or "hydrolic" in session["tire"] or "mechanical" in session["tire"] or "rim" in session["tire"] or "rotor" in session["breakPads"]:
+    if "break" in session["breakPads"] or "hydrolic" in session["breakPads"] or "mechanical" in session["breakPads"] or "rim" in session["breakPads"] or "rotor" in session["breakPads"]:
         total=total+1
     else:
         incorrect=incorrect+Markup("48. Break Pads "+ "<br><b>your answer:</b> "+session["breakPads"]+"<br> <b>correct answer:</b>"+" used by brakes to stop the bike<br><br>")
