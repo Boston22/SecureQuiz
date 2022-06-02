@@ -311,7 +311,7 @@ def renderAnswers():
     if session["adjustingBarrel"]=="built-in solutions to cable tension":
         total=total+1
     else:
-        incorrect=incorrect+Markup("39. Adjusting Barrel "+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+" built-in solutions to cable tension<br><br>")
+        incorrect=incorrect+Markup("39. Adjusting Barrel "+ "<br><b>your answer:</b> "+session["adjustingBarrel"]+"<br> <b>correct answer:</b>"+" built-in solutions to cable tension<br><br>")
 
     if session["frontBrakes"]=="break for front wheel":
         total=total+1
