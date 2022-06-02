@@ -346,12 +346,12 @@ def renderAnswers():
     if session["presta"]=="the skinny and long valve system with a piece on end that can be loosened by twisting":
         total=total+1
     else:
-        incorrect=incorrect+Markup("46. Presta "+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+" the skinny and long valve system with a piece on end that can be loosened by twisting<br><br>")
+        incorrect=incorrect+Markup("46. Presta "+ "<br><b>your answer:</b> "+session["presta"]+"<br> <b>correct answer:</b>"+" the skinny and long valve system with a piece on end that can be loosened by twisting<br><br>")
 
     if session["rotor"]==" metal disc affixed to each wheel hub that runs in between the brake pads in the brake calipers on the bike frame":
         total=total+1
     else:
-        incorrect=incorrect+Markup(+ "<br><b>your answer:</b> "+session[""]+"<br> <b>correct answer:</b>"+"  metal disc affixed to each wheel hub that runs in between the brake pads in the brake calipers on the bike frame<br><br>")
+        incorrect=incorrect+Markup(+ "<br><b>your answer:</b> "+session["rotor]+"<br> <b>correct answer:</b>"+"  metal disc affixed to each wheel hub that runs in between the brake pads in the brake calipers on the bike frame<br><br>")
 
     if "break" in session["breakPads"] or "hydrolic" in session["breakPads"] or "mechanical" in session["breakPads"] or "rim" in session["breakPads"] or "rotor" in session["breakPads"]:
         total=total+1
