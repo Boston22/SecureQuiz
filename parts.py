@@ -351,7 +351,7 @@ def renderAnswers():
     if session["rotor"]==" metal disc affixed to each wheel hub that runs in between the brake pads in the brake calipers on the bike frame":
         total=total+1
     else:
-        incorrect=incorrect+Markup(+ "<br><b>your answer:</b> "+session["rotor]+"<br> <b>correct answer:</b>"+"  metal disc affixed to each wheel hub that runs in between the brake pads in the brake calipers on the bike frame<br><br>")
+        incorrect=incorrect+Markup(+ "<br><b>your answer:</b> "+session["rotor"]+"<br> <b>correct answer:</b>"+"  metal disc affixed to each wheel hub that runs in between the brake pads in the brake calipers on the bike frame<br><br>")
 
     if "break" in session["breakPads"] or "hydrolic" in session["breakPads"] or "mechanical" in session["breakPads"] or "rim" in session["breakPads"] or "rotor" in session["breakPads"]:
         total=total+1
