@@ -306,7 +306,7 @@ def renderAnswers():
     if session["forkCrown"]=="connects between fork legs":
         total=total+1
     else:
-        incorrect=incorrect+Markup("38. Fork Crown "+ "<br><b>your answer:</b> "+session["frokCrown"]+"<br> <b>correct answer:</b>"+" bridges gap between the fork legs and helps keep them sturdy<br><br>")
+        incorrect=incorrect+Markup("38. Fork Crown "+ "<br><b>your answer:</b> "+session["forkCrown"]+"<br> <b>correct answer:</b>"+" bridges gap between the fork legs and helps keep them sturdy<br><br>")
 
     if session["adjustingBarrel"]=="built-in solutions to cable tension":
         total=total+1
