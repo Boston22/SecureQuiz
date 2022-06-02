@@ -43,7 +43,7 @@ def renderPage2():
         #7-7
         session["rim"]=request.form["rim"] #9 done
         session["spokes"]=request.form["spokes"] #10 done
-        session["spokeNipples"]=request.form["spokeNipples"] #11
+        session["spokeNipples"]=request.form["spokeNipples"] #11 done
         session["hub"]=request.form["hub"] #12
         session["tube"]=request.form["tube"] #13
         session["tire"]=request.form["tire"] #14
@@ -54,12 +54,12 @@ def renderPage2():
         session["tubeless"]=request.form["tubeless"] #17
 
         #6-6
-        session["20"]=request.form["20"] #18
-        session["24"]=request.form["24"] #19
-        session["26"]=request.form["26"] #20
-        session["27"]=request.form["27"] #21
-        session["27.5"]=request.form["27.5"] #22
-        session["29"]=request.form["29"] #23
+        session["s20"]=request.form["s20"] #18
+        session["s24"]=request.form["s24"] #19
+        session["s26"]=request.form["s26"] #20
+        session["s27"]=request.form["s27"] #21
+        session["s27.5"]=request.form["s27.5"] #22
+        session["s29"]=request.form["s29"] #23
 
         #2-2
         session["fullSuspension"]=request.form["fullSuspension"] #24
@@ -162,75 +162,75 @@ def renderAnswers():
     else:
         incorrect=incorrect+Markup("9. Rim "+ "<br><b>your answer</b> "+session["rim"]+"<br> <b>correct answer</b>"+" gives the wheel(s) it's shape <b>or</b> keeps the wheel(s) in circular shape<br><br>")
 
-    if session["spokes"]=="connects hub to rim with spoke nipples" or session["spokes"]=="connects hub to rim" or session["spokes"]=="connects hub to spoke nipples":
+    if session["spokes"]=="connects hub to rim with spoke nipples" or session["spokes"]=="connects the hub to the rim" or session["spokes"]=="connects hub to spoke nipples":
         total=total+1
     else:
         incorrect=incorrect+Markup("10. Spokes "+ "<br><b>your answer</b> "+session["spokes"]+"<br> <b>correct answer</b>"+" connects hub to rim with spoke nipples <b>or</b> connects hub to rim <b>or</b> connects hub to spoke nipples<br><br>")
 
-    if session["spokeNipples"]=="":
+    if session["spokeNipples"]=="holds the spokes in the rim" or session["spokeNipples"]=="connects the rim to the spokes" or session["spokeNipples"]=="controls tightness of spokes":
         total=total+1
     else:
-        incorrect=incorrect+Markup("11. {value for value in variable}poke nipples "+ "<br><b>your answer</b> "+session["spokeNipples"]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("11. Spoke nipples "+ "<br><b>your answer</b> "+session["spokeNipples"]+"<br> <b>correct answer</b>"+" holds the spokes in the rim <b>or</b> connects the rim to the spokes <b>or</b> controls tightness of spokes<br><br>")
 
-    if session[""]=="":
+    if session["hub"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("12. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("12. Hub"+ "<br><b>your answer</b> "+session["hub"]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["tube"]=="":
         total=total+1
     else:
         incorrect=incorrect+Markup("13. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["tire"]=="":
         total=total+1
     else:
         incorrect=incorrect+Markup("14. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["valveSystem"]=="":
         total=total+1
     else:
         incorrect=incorrect+Markup("15. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["tubed"]=="":
         total=total+1
     else:
         incorrect=incorrect+Markup("16. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["tubeless"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("17. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("17. Tubeless "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["s20"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("18. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("18. Size "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["s24"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("19. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("19. Size "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["s26"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("20. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("20. Size "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["s27"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("21. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("21. Size "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["s27.5"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("22. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("22. Size "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
-    if session[""]=="":
+    if session["s29"]=="":
         total=total+1
     else:
-        incorrect=incorrect+Markup("23. "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
+        incorrect=incorrect+Markup("23. Size "+ "<br><b>your answer</b> "+session[""]+"<br> <b>correct answer</b>"+" <br><br>")
 
     if session[""]=="":
         total=total+1
